@@ -1,7 +1,6 @@
 function setup() {
   // put setup code here
     createCanvas(800, 800);
-
 }
 
 function draw() {
@@ -104,8 +103,4 @@ if (mouseIsPressed){
       fill("#000000")
         text('Stove Dodgers was a normal American teenager. Born from a Japanese family skilled in\n martial arts, Stove had learned techniques of the Old Masters. His Grandpa would tell him\n stories of how old Japan had been at peace... until the Fire Nation attacked. Stove\n used to think these were just fantasy stories, but little did he know that they were\n true.', 137, 458);
 }
-}
-
-function mouseReleased(){
-  console.log(mouseX + ',' + mouseY);
 }
