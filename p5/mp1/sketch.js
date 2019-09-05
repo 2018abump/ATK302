@@ -10,10 +10,6 @@ background("grey");
 noStroke();
 
 
-fill("#162CA2");
-  text(mouseX + ',' + mouseY, 30, 30);
-
-
 if (mouseIsPressed){
   background(188, random(124), random(124));
   fill("#2C2C2C")
