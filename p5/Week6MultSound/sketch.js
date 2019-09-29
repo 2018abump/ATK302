@@ -54,7 +54,7 @@ function draw() {
       break;
 
     case 3:
-    image(image2, width/2, height/2);
+    image(image2, 0, 0);
       break;
 
     case 4:
@@ -63,7 +63,7 @@ function draw() {
       break;
 
     case 5:
-    image(image3, width/2, height/2);
+    image(image3, 0, 0);
       break;
 
   }
