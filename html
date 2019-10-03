@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+
+<html>
+
+<!-- page 004: crazy kids @chaaostheory
+
+edit to your hearts content, i'd just prefer you'd leave the credit in
+-->
+
+
+<head>
+
+<title>Meet the Muses</title>
+
+<link rel="shortcut icon" href="{favicon}">
+
+<!--fonts-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+
+<!-- fontawesome-->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+<!--tool tips-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://static.tumblr.com/iuw14ew/VSQma1786/jquery.style-my-tooltips.js" type="text/javascript"></script>
+<script>
+     (function($){
+         $(document).ready(function(){
+             $("[title]").style_my_tooltips({tip_delay_time:20});
+         });
+     })(jQuery);
+ </script>
+
+
+<!-- hint.css-->
+<link href="https://static.tumblr.com/ewjs2wm/ek2pau39z/hint.css" rel="stylesheet" type="text/css">
+
+
+<!-- isotope filtering by hendrixrph-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script><script type="text/javascript">
+$(document).ready( function() {
+ // init Isotope
+ var $grid = $('.grid').isotope({
+   itemSelector: '.grid-item'
+ });
+
+ // store filter for each group
+ var filters = {};
+
+ $('.filters').on( 'click', '.button', function() {
+   var $this = $(this);
+   // get group key
+   var $buttonGroup = $this.parents('.button-group');
+   var filterGroup = $buttonGroup.attr('data-filter-group');
+   // set filter for group
+   filters[ filterGroup ] = $this.attr('data-filter');
+   // combine filters
+   var filterValue = concatValues( filters );
+   // set filter for Isotope
+   $grid.isotope({ filter: filterValue });
+ });
+
+ // change is-checked class on buttons
+ $('.button-group').each( function( i, buttonGroup ) {
+   var $buttonGroup = $( buttonGroup );
+   $buttonGroup.on( 'click', 'button', function() {
+     $buttonGroup.find('.is-checked').removeClass('is-checked');
+     $( this ).addClass('is-checked');
+   });
+ });
+
+});
+
+// flatten object by concatting values
+function concatValues( obj ) {
+ var value = '';
+ for ( var prop in obj ) {
+   value += obj[ prop ];
+ }
+ return value;
+}
+</script>
+
+<!-- tippy.js by @atomiks-->
+ <script src="https://unpkg.com/tippy.js@2.5.4/dist/tippy.all.min.js"></script>
+
+<script>
+ (function($){
+         $(document).ready(function(){
+             tippy('.name [title]', {
+                zIndex: 99999,
+                arrow: true,
+                arrowType: 'sharp',
+                arrowTransform: 'scaleX(0.75)',
+                inertia: true,
+                placement: 'top',
+                size: 'small',
+                animation: 'scale',
+                offset: '0, 5',
+             });
+         });
+     })(jQuery);
+</script>
+
+<script>
+ (function($){
+         $(document).ready(function(){
+             tippy('.sidelink [title]', {
+                zIndex: 99999,
+                arrow: true,
+                arrowType: 'sharp',
+                arrowTransform: 'scaleX(0.75)',
+                inertia: true,
+                placement: 'top',
+                size: 'small',
+                animation: 'scale',
+                offset: '0, 0',
+             });
+         });
+     })(jQuery);
+</script>
+
+<script>
+ (function($){
+         $(document).ready(function(){
+              tippy('.links [title]', {
+                zIndex: 99999,
+                arrow: true,
+                arrowType: 'sharp',
+                arrowTransform: 'scaleX(0.75)',
+                inertia: true,
+                placement: 'bottom',
+                size: 'small',
+                animation: 'scale',
+                offset: '0, 0',
+             });
+         });
+     })(jQuery);
+</script>
+
+<style>
+
+iframe.tmblr-iframe {
+    opacity:0;
+    display:none!important;}
+
+::-webkit-scrollbar {
+width:2px;
+border-radius: 5px;
+height: auto;
+padding:2px
+
+}
+::-webkit-scrollbar-thumb {
+background-color:#ddd;
+border-radius: 5px;
+padding:2px;
+}
+
+/* tippy body styling */
+.tippy-tooltip {
+border-radius:0px;
+font-size:7px;
+text-transform:uppercase;
+font-family:'open sans', sans-serif;
+font-weight:500;
+color:#000;
+background:#fff;
+border:1px solid #555;
+
+}
+
+/*tippy arrow styling*/
+
+/*tippy arrow outline*/
+.tippy-popper[x-placement^=top] .tippy-tooltip .tippy-arrow {
+    border-top: 7px solid #555; /*your color here*/
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip  .tippy-arrow {
+    border-bottom: 7px solid #555; /* your color here */
+}
+
+.tippy-popper[x-placement^=right] .tippy-tooltip .tippy-arrow {
+    border-right: 7px solid #555; /* your color here */
+}
+
+
+.tippy-popper[x-placement^=left] .tippy-tooltip .tippy-arrow {
+    border-left: 7px solid #555; /* your color here */
+}
+
+/* tippy arrow color */
+ .tippy-poper[x-placement^=top]:before, .tippy-arrow:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border: 4px solid #fff;
+  top:-12px;
+  left:-4px;
+   -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.tippy-popper[x-placement^=bottom] .tippy-tooltip.bottom-theme .tippy-arrow:before {
+   content: "";
+  position: absolute;
+  z-index: -1;
+  border: 4px solid #fff;
+  top:4px;
+  left:-4px;
+   -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/* base styling */
+
+body {
+    height:100%;
+    font-family:open sans, sans-serif;
+    background-image:url('https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/rN0W64K4ipau8gxv/light-gray-background-soft-fifteen-shades-of-grey-smooth-background-with-the-addition-of-a-bit-of-noise_be-2qbqqkl_thumbnail-full01.png');
+    background-size:cover;
+    background-attachment: fixed;
+    overflow-x:hidden;
+}
+
+
+a {
+    color:#000;
+}
+
+span {
+    background: buttonface;
+    padding:2px;
+    font-size:11px;
+    display:inline-block;
+    float:right;
+    font-weight:400;
+    margin-right:10px;
+}
+
+h1 {
+    background-color: #a10000;
+    padding:5px;
+    font-weight:800;
+    margin-top:5px;
+    margin-bottom:-35px;
+    text-align:justify;
+
+}
+
+h2 {
+    color:#000;
+    background-color: #a10000;
+    padding:5px;
+    width:auto;
+    display: inline-block;
+    font-size:20px;
+
+}
+
+/*sidebar styling */
+
+.sidebar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:300px;
+    height:100%;
+    padding:5px 10px;
+    }
+
+.sidelink {
+    font-size:13px;
+    margin-top:40px;
+}
+
+.sidelink a {
+    background:rgba(255,255,255,0.8);
+    border-radius:100%;
+    padding:2px 3px 2px 3px;
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+.sidelink a:hover {
+    background:#000;
+    color:rgba(255,255,255,0.8);
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+}
+
+/* grid styling */
+
+.bg {
+  background-color: #424242 ;
+    padding-left: 20px;
+    margin-left: 340px;
+    margin-top: -10px;
+    position: absolute;
+    width: calc( 100% - 340px);
+    height: 101%;
+    overflow-x:hidden;
+}
+
+.grid {
+    margin-top:0;
+    height:100%;
+    overflow-x:hidden;
+}
+
+.grid-item {
+    width:200px;
+    height:200px;
+    padding:3px;
+    margin:10px;
+    text-align:center;
+    line-height:100px
+    position: absolute;
+    border-radius:100%;
+    box-shadow:3px 3px 10px #000;
+}
+
+.grid-item img {
+    width:190px;
+    border-radius:100%;
+    margin-top:1px;
+    border:4px solid #fff;
+}
+
+.filters {
+    margin-top:40px;
+}
+
+.filters button {
+        border:none;
+        text-transform:uppercase;
+        display:inline block;
+        -webkit-transition: 0.3s; /* Safari */
+        transition: 0.3s;
+    }
+
+.filters button:hover, .is-checked {
+    color: #000;
+    background:#fff;
+    outline: none!important;
+    -webkit-transition: 0.3s; /* Safari */
+    transition: 0.3s;
+}
+
+.filters .is-checked {
+    font-style: italic;
+}
+
+/* grid items */
+
+.img {
+    padding: 7px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    text-align:center;
+}
+
+.hover {
+    width:100%;
+    height:150px;
+    margin-top:-170px;
+    opacity:0;
+    -webkit-transition: 0.5s; /* Safari */
+    transition: 0.5s;
+
+}
+
+.hover:hover {
+    opacity:1;
+    -webkit-transition: 0.9s; /* Safari */
+    transition: 0.9s;
+
+}
+
+.name {
+    background-color:#fff;
+    border:1px solid #555;
+    display: inline-block;
+   position: relative;
+    width:auto;
+    padding:5px;
+    font-style:italic;
+    top:40px;
+    cursor:default;
+}
+
+.links {
+    margin-top:50px;
+}
+
+.links a {
+    background-color:#fff;
+    border:1px solid #555;
+    padding:2px;
+}
+
+/* credit */
+
+.credit{
+position:fixed;
+margin-left:calc(100% - 40px);
+top:95%
+}
+
+.credit a{
+color:#000;
+background:rgba(255,255,255, 0.5);
+border-radius:100%;
+padding:2px 3px;
+font-size:20px;
+-webkit-transition: 1s; /* Safari */
+    transition: 1s;
+}
+
+.credit a:hover{
+color:#fff;
+background:rgba(0,0,0, 0.5);
+-webkit-transition: 1s; /* Safari */
+    transition: 1s;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!-- sidebar-->
+<div class="sidebar">
+<!-- links -->
+<div class="sidelink">
+<a href="https://memurfevur.tumblr.com/" title="home"><i class="fa fa-home fa-fw"></i></a>
+<a href="https://memurfevur.tumblr.com/ask" title="ask"><i class="far fa-envelope fa-fw"></i></a>
+<a href="https://memurfevur.tumblr.com/memurtags" title="tags"><i class="fas fa-user-circle fa-fw"></i></a>
+</div>
+<!--title-->
+<h1>Meet the Muses</h1>
+
+<!-- filters-->
+<div class="filters">
+
+<!--
+how to do isotope filters: quick & dirty
+
+basically you add whatever feature you want to filter by using data-filter. it'll always be in the form data-filter=".value".
+
+you can add these filters to the grid items by adding it to the grid item class. so, it'd look like <div class="grid-item value value2 etc">...</div> and it'll sort by all of that shit.
+
+if you need more info, googles your friend. look at the examples below. look at other isotope filtering pages.
+-->
+
+<div class="button-group" data-filter-group="affiliation"><h2>Clan</h2><br>
+<button class="button is-checked" data-filter="">All</button>
+<button class="button" data-filter=".one">Waruira Svihelen</button>
+<button class="button" data-filter=".two">Starmap Contagion</button>
+<button class="button" data-filter=".three">Shadelings</button>
+<button class="button" data-filter=".four">Other</button>
+</div>
+
+
+<div class="button-group" data-filter-group="breed"><h2>Affiliation</h2><br>
+<button class="button is-checked" data-filter="">all</button>
+<button class="button" data-filter=".bog">Bogsneak</button>
+<button class="button" data-filter=".coatl">Coatl</button>
+<button class="button" data-filter=".fae">Fae</button>
+<button class="button" data-filer=".goaler">Goaler</button>
+<button class="button" data-filter=".guard">Guardian</button>
+<button class='button' data-filter=".imp">Imperial</button>
+<button class='button' data-filter=".mirror">Mirror</button>
+<button class='button' data-filter=".pearl">Pearlcatcher</button>
+<button class='button' data-filter=".ridge">Ridgeback</button>
+<button class='button' data-filter=".sky">Skydancer</button>
+<button class="button" data-filter=".snap">Snapper</button>
+<button class="button" data-filter=".spiral">Spiral</button>
+<button class="button" data-filter=".tundra">Tundra</button>
+<button class="button" data-filter=".wc">Wildclaw</button>
+</div>
+
+</div>
+<!-- end filters-->
+
+</div>
+<!-- end sidebar-->
+<div class="bg">
+<!-- start grid-->
+
+<div class="grid">
+
+<!-- start character-->
+<div class="grid-item one m YA hive sun" style=background-url=('https://imgur.com/c3hIUGS.png'>
+<div clas="img">
+<img src="https://imgur.com/c3hIUGS.png">
+
+<div class="hover">
+<div class="name"><a title=>Julian Zealis</a></div>
+<div class="links">
+    <a href="https://memurfevur.tumblr.com/julianzealis" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="https://memurfevur.tumblr.com/archive/tagged/julianzealis" data-tippy-theme="bottom" title="archive"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+
+<!-- start character-->
+<div class="grid-item nine m hive guild night" style="background-image:url('https://placehold.it/300');">
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Adrian Uyilst</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+
+<!-- start character-->
+<div class="grid-item eleven f adult indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Torrah Dolfni</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item three f YA hive" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Hadesa Lankro</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item six m adult indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Expyno Dioxal</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item eight m YA twin" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Deedro Birbel</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item eight m adult night" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Isaiah Cygnus</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item three f adult hive" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Razell Lyniks</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item nine f adult sun guild"=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>The Foreseer</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item one m adult indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Phasma Zealis</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item five f adult indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>The Engineer</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item nine f adult hive" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Dianna Uyilst</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item three f adult hive" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Cleleo Lyniks</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item twelve f adult twin" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Keonin Caniss</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item eleven f YA indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Miouri Mystir</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item five f YA indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Didgit Megead</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item eight m YA indie" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Rolloz Satura</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item five f YA twin" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Assyla Everis</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item two f adult night" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Neveah Havenn</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item two m YA hive" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Theron Cerode</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+<!-- start character-->
+<div class="grid-item three m YA hive" style=background-url=('https://placehold.it/300'>
+<div clas="img">
+<img src="https://placehold.it/300">
+
+<div class="hover">
+<div class="name"><a title=>Ashter Faurux</a></div>
+<div class="links">
+    <a href="#" data-tippy-theme="bottom" title="tag"><i class="fab fa-slack-hash fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom"  title="about"><i class="fas fa-user-circle fa-fw"></i></a>
+    <a href="#" data-tippy-theme="bottom" title="blog"><i class="fas fa-code fa-fw"></i></a>
+</div>
+</div>
+
+</div>
+</div>
+<!-- end character-->
+
+
+
+</div>
+<!-- end grid-->
+
+</div>
+
+
+<!-- CREDIT // would be nice if u left intact -->
+<div class="credit">
+    <a href="http://chaaostheory.tumblr.com" class="hint--left" aria-label="@chaaostheory"><i class="fas fa-feather-alt fa-fw" aria-hidden="true"></i></a>
+</div>
+
+</html>
