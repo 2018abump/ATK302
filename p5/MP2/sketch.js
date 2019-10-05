@@ -14,14 +14,14 @@ function preload(){
 
 function setup() {
   // put setup code here
-  createCanvas(800,800);
+  createCanvas(800, 800);
 
   paint = loadFont('assets/font/FingerPaint-Regular.ttf');
 
-  pic1 = loadImage('assets/pics/guy1.png');
-  pic2 = loadImage('assets/pics/guy2.png');
-  pic3 = loadImage('assets/pics/guy3.png');
-  pic4 = loadImage('assets/pics/guy4.png');
+  pic1 = loadImage('assets/pics/ATK302.1.png');
+  pic2 = loadImage('assets/pics/ATK302.2.png');
+  pic3 = loadImage('assets/pics/ATK302.3.png');
+  pic4 = loadImage('assets/pics/ATK302.4.png');
 }
 
 function draw() {
@@ -49,7 +49,7 @@ function draw() {
         sb -=1;
         if(sb <= 0){
         sb = 255;
-        myState = 3;
+        // myState = 3;
         }
         myTimer++;
           if(myTimer > 250){
@@ -80,10 +80,10 @@ function draw() {
       sb -=1;
       if(sb <= 0){
       sb = 255;
-      myState = 3;
+      // myState = 3;
       }
       myTimer++;
-        if(myTimer > 200){
+        if(myTimer > 250){
           myTimer = 0;
           myState = 5;
         }
@@ -91,6 +91,9 @@ function draw() {
 
     case 5:
     background(0);
+    textFont(paint, 80);
+    fill('red');
+    text("Don't litter.", 700, 700);
     // tint(sb);
     tint(sb);
     image(pic4, 0,0);
