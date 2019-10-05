@@ -4,6 +4,7 @@ var sb = 255;
 var song1;
 var pic1, pic2, pic3, pic4;
 var paint;
+var x = 0;
 
 function preload(){
   song1 = loadSound('assets/music/ForATK302_mixdown.mp3_4.mp3');
@@ -36,7 +37,16 @@ function draw() {
       text("Fear creates sustainability", 300, 300);
       textFont('Helvetica', 15);
       text("Click to Begin", width/2, height/2);
-      text("do not click other slides", width/2, height/2 +20);
+      push();
+        translate(x, 50);
+        x++ ;
+        if (x > width) {
+          x = 0;
+        }
+
+        words();
+
+        pop();
       song1.pause();
     break;
 
@@ -102,7 +112,7 @@ function draw() {
       sb = 255;
       }
       textFont(paint, 20);
-      text("Do Not Litter", 50, 700);
+      text("Do Not Litter", 50, 300);
     myTimer++;
       if(myTimer > 250){
         myTimer = 0;
@@ -125,4 +135,8 @@ function mouseReleased(){
     if (myState <= 0) {
       myState = 1;
     }
+}
+
+function words(){
+    text("do not click other slides", width/2, height/2 +20);
 }
