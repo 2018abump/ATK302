@@ -32,8 +32,11 @@ function draw() {
       background(0);
       textFont(paint, 20);
       fill('red');
-      text("Fear creates sustainability", 20, 20);
+      textSize(30);
+      text("Fear creates sustainability", 300, 300);
+      textFont('Helvetica', 15);
       text("Click to Begin", width/2, height/2);
+      text("do not click other slides", width/2, height/2 +20);
       song1.pause();
     break;
 
@@ -98,6 +101,8 @@ function draw() {
       if(sb <= 0){
       sb = 255;
       }
+      textFont(paint, 20);
+      text("Do Not Litter", 50, 700);
     myTimer++;
       if(myTimer > 250){
         myTimer = 0;
