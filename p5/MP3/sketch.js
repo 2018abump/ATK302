@@ -70,17 +70,17 @@ function draw() {
   //game();
   switch(myState) {
 
+  // case 0:
+  // lostsound.stop();
+  // myState=1;
+  // break;
+
   case 0:
-  lostsound.stop();
-  myState=1;
-  break;
-
-  case 1:
   song1.play();
-  myState=2
+  myState=1
   break;
 
-  case 2:  // splash screen
+  case 1:  // splash screen
   image(splashBG, width/2, height/2);
   fill('red');
   textFont(paint, 20);
@@ -91,7 +91,7 @@ function draw() {
   text('Click to Begin', width/2, height/2);
   break;
 
-  case 3: // the game state
+  case 2: // the game state
     game();
     timer++;
     if (timer > 600){
@@ -100,7 +100,7 @@ function draw() {
     }
   break;
 
-  case 4: // the win state
+  case 3: // the win state
   image(winpic, width/2, height/2);
   fill('red');
   textFont(paint, 20);
@@ -108,18 +108,19 @@ function draw() {
   song1.stop();
   break;
 
-  case 5:
+  case 4:
   song1.stop();
-  myState = 6
+  myState = 5
   break;
 
-  case 6:
+  case 5:
   lostsound.play();
-  myState=7
+  song1.stop();
+  myState=6
   break;
 
-  case 7: // the lose state
-  // if (myState = 5){
+  case 6: // the lose state
+  // if (myState == 6){
   //   song1.pause();
   //   lostsound.play();
   // }
@@ -140,17 +141,18 @@ function draw() {
 
 function mouseReleased(){
   switch(myState){
-    case 2:
-      myState = 3;
+    case 1:
+      myState = 2;
   break;
 
-  case 4: //the win state
+  case 3: //the win state
     resetTheGame();
     myState = 0;
   break;
 
-  case 7: //the lose state
+  case 6: //the lose state
     resetTheGame();
+    lostsound.stop();
     myState = 0;
   break;
   }
@@ -278,7 +280,7 @@ function game(){
   }
 
   if(cars.length == 0){
-    myState = 4;
+    myState = 3;
   }
   //
   // if(hounds[i].pos.dist(frogPos)<30){
