@@ -19,7 +19,6 @@ function preload(){
 
   song1 = loadSound("assets/ForATK302_mixdown.mp3");
   song1.loop();
-  song1.stop();
 }
 
 function setup() {
