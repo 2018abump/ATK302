@@ -72,12 +72,12 @@ function draw() {
   switch(myState) {
 
   case 0:
-  lostsound.stop();
+  song1.play();
   myState=1;
   break;
 
   case 1:
-  song1.play();
+  lostsound.stop();
   myState=2
   break;
 
