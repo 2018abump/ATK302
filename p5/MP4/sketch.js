@@ -5,11 +5,11 @@ function preload() {
   mariah = loadImage('Assets/AIWFCIY.jpg');
   // canada = loadImage('Assets/Can.jpg');
   // russian = loadImage('Assets/CDB.jpg');
-  // california = loadImage('Assets/CG.jpg');
+  california = loadImage('Assets/CG.jpg');
   // despacito = loadImage('Assets/D.jpg');
   // vocaloid = loadImage('Assets/IP.jpg');
-  // bluegrass = loadImage('Assets/TLO.jpg');
-  // hindi = loadImage('Assets/TTT.jpg');
+  bluegrass = loadImage('Assets/TLO.jpg');
+  hindi = loadImage('Assets/TTT.jpg');
   // up = loadImage('assets/OTR.jpg');
   // down = loadImage('assets/KAP.jpg');
 
@@ -185,23 +185,23 @@ function draw() {
     myState = 5; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
-  if ((alpha > 136) && (alpha < 180) && (myState != 6)) { // degrees for 2nd song
+  if ((alpha > 136) && (alpha < 180) && (myState != 8)) { // degrees for 2nd song
     myState = 7; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
-  if ((alpha > 181) && (alpha < 225) && (myState != 6)) { // degrees for 2nd song
+  if ((alpha > 181) && (alpha < 225) && (myState != 10)) { // degrees for 2nd song
     myState = 9; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
-  if ((alpha > 226) && (alpha < 270) && (myState != 6)) { // degrees for 2nd song
+  if ((alpha > 226) && (alpha < 270) && (myState != 12)) { // degrees for 2nd song
     myState = 11; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
-  if ((alpha > 271) && (alpha < 315) && (myState != 6)) { // degrees for 2nd song
+  if ((alpha > 271) && (alpha < 315) && (myState != 14)) { // degrees for 2nd song
     myState = 13; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
-  if ((alpha > 316) && (alpha < 360) && (myState != 6)) { // degrees for 2nd song
+  if ((alpha > 316) && (alpha < 360) && (myState != 16)) { // degrees for 2nd song
     myState = 15; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
@@ -221,7 +221,7 @@ function draw() {
 
     case 2:
       // put some pretty images here or something, for song1
-      // image(mariah, 0, 0);
+      image(mariah, 0, 0);
       text("playing song 1", 100, 150);
       break;
 
@@ -234,6 +234,7 @@ function draw() {
 
     case 4:
       // pretty stuff to hang out here.
+      image(bluegrass, 0, 0);
       text("playing song 2", 100, 150);
       break;
 
@@ -245,6 +246,7 @@ function draw() {
 
     case 6:
       // pretty stuff to hang out here.
+      image(hindi, 0, 0);
       text("playing song 3", 100, 150);
       break;
 
@@ -256,6 +258,7 @@ function draw() {
 
     case 8:
       // pretty stuff to hang out here.
+      image(california, 0, 0);
       text("playing song 4", 100, 150);
       break;
 
