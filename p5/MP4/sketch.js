@@ -256,7 +256,7 @@ function draw() {
 
     case 8:
       // pretty stuff to hang out here.
-      text("playing song 3", 100, 150);
+      text("playing song 4", 100, 150);
       break;
 
       // states for song 2
@@ -267,7 +267,7 @@ function draw() {
 
     case 10:
       // pretty stuff to hang out here.
-      text("playing song 3", 100, 150);
+      text("playing song 5", 100, 150);
       break;
 
       // states for song 2
@@ -278,7 +278,7 @@ function draw() {
 
     case 12:
       // pretty stuff to hang out here.
-      text("playing song 3", 100, 150);
+      text("playing song 6", 100, 150);
       break;
 
       // states for song 2
@@ -289,7 +289,7 @@ function draw() {
 
     case 14:
       // pretty stuff to hang out here.
-      text("playing song 3", 100, 150);
+      text("playing song 7", 100, 150);
       break;
   }
 
