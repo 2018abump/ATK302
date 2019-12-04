@@ -55,8 +55,8 @@ function preload() {
 //   jb.stop();
 //   bop.loop();
 //   bop.stop();
-  christmas.loop();
-  christmas.stop();
+  // christmas.loop();
+  // christmas.stop();
 //   chum.loop();
 //   chum.stop();
 //
