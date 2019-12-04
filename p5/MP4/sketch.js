@@ -33,7 +33,7 @@ function preload() {
   // anthem = loadSound('Assets/hymne-natonal-du-canada-en-franais-youtubemp3free.org.mp3');
   // jb = loudSound('Assets/JustinBieber-Despacito(Lyrics)ftLuisFonsiDaddyYankee[Pop].mp3');
   // bop = loudSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
-  christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
+  // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
 }
 //
@@ -205,7 +205,7 @@ function draw() {
   switch (myState) {
     // states for song 1
     case 1: // this is for the first song.
-      christmas.play() ;
+      // christmas.play() ;
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
