@@ -1,19 +1,6 @@
 // var direction = 0;
 var mariah;
-// var canada;
-// var russian
-// var california;
-// var despacito;
-// var vocaloid;
-// var bluegrass;
-// var hindi;
-// var north;
-// var south;
-// var comicsans;
-// var east;
-// var west;
-// var turnAxis;
-//
+
 function preload() {
   mariah = loadImage('Assets/AIWFCIY.jpg');
   // canada = loadImage('Assets/Can.jpg');
@@ -35,6 +22,7 @@ function preload() {
   // bop = loudSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
   // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
+  //
 }
 //
 // function setup() {
@@ -185,17 +173,38 @@ function draw() {
   // alpha is the direction! It starts at 0 when you load the page. If you turn to the left, it goes up,
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
 
-  if ((alpha > 90) && (alpha < 0) && (myState != 2)) { // degrees for 1st song; you can change these!
+  if ((alpha > 0) && (alpha < 45) && (myState != 2)) { // degrees for 1st song; you can change these!
     myState = 1;
   }
 
-  if ((alpha > 16) && (alpha < 30) && (myState != 4)) { // degrees for 2nd song
+  if ((alpha > 46) && (alpha < 90) && (myState != 4)) { // degrees for 2nd song
     myState = 3; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
-  if ((alpha > 31) && (alpha < 45) && (myState != 6)) { // degrees for 2nd song
+  if ((alpha > 91) && (alpha < 135) && (myState != 6)) { // degrees for 2nd song
     myState = 5; // we have to skip a state because each state needs to go to a "hangout" state
   }
+
+  if ((alpha > 136) && (alpha < 180) && (myState != 6)) { // degrees for 2nd song
+    myState = 7; // we have to skip a state because each state needs to go to a "hangout" state
+  }
+
+  if ((alpha > 181) && (alpha < 225) && (myState != 6)) { // degrees for 2nd song
+    myState = 9; // we have to skip a state because each state needs to go to a "hangout" state
+  }
+
+  if ((alpha > 226) && (alpha < 270) && (myState != 6)) { // degrees for 2nd song
+    myState = 11; // we have to skip a state because each state needs to go to a "hangout" state
+  }
+
+  if ((alpha > 271) && (alpha < 315) && (myState != 6)) { // degrees for 2nd song
+    myState = 13; // we have to skip a state because each state needs to go to a "hangout" state
+  }
+
+  if ((alpha > 316) && (alpha < 360) && (myState != 6)) { // degrees for 2nd song
+    myState = 15; // we have to skip a state because each state needs to go to a "hangout" state
+  }
+
 
   // add the rest to 360...
 
@@ -205,18 +214,20 @@ function draw() {
   switch (myState) {
     // states for song 1
     case 1: // this is for the first song.
+    //north
       // christmas.play() ;
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
     case 2:
       // put some pretty images here or something, for song1
-      image(mariah, 0, 0);
+      // image(mariah, 0, 0);
       text("playing song 1", 100, 150);
       break;
 
       // states for song 2
     case 3: // this is for the 2nd song.
+      //south
       // song2.play() ;
       myState = 4; // go directly to the next state so we don't keep needle-dropping!
       break;
@@ -237,6 +248,49 @@ function draw() {
       text("playing song 3", 100, 150);
       break;
 
+      // states for song 2
+    case 7:
+      // song2.play() ;
+      myState = 8;
+      break;
+
+    case 8:
+      // pretty stuff to hang out here.
+      text("playing song 3", 100, 150);
+      break;
+
+      // states for song 2
+    case 9:
+      // song2.play() ;
+      myState = 10;
+      break;
+
+    case 10:
+      // pretty stuff to hang out here.
+      text("playing song 3", 100, 150);
+      break;
+
+      // states for song 2
+    case 11:
+      // song2.play() ;
+      myState = 12;
+      break;
+
+    case 12:
+      // pretty stuff to hang out here.
+      text("playing song 3", 100, 150);
+      break;
+
+      // states for song 2
+    case 13:
+      // song2.play() ;
+      myState = 14;
+      break;
+
+    case 14:
+      // pretty stuff to hang out here.
+      text("playing song 3", 100, 150);
+      break;
   }
 
 
