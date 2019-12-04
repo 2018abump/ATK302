@@ -185,7 +185,7 @@ function draw() {
   // alpha is the direction! It starts at 0 when you load the page. If you turn to the left, it goes up,
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
 
-  if ((alpha > 0) && (alpha < 15) && (myState != 2)) { // degrees for 1st song; you can change these!
+  if ((alpha > 90) && (alpha < 0) && (myState != 2)) { // degrees for 1st song; you can change these!
     myState = 1;
   }
 
@@ -211,6 +211,7 @@ function draw() {
 
     case 2:
       // put some pretty images here or something, for song1
+      image(mariah, 0, 0);
       text("playing song 1", 100, 150);
       break;
 
