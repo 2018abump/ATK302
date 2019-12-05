@@ -162,7 +162,7 @@ function draw() {
 
     case 2:
       // put some pretty images here or something, for song1
-      image(mariah, 0, 0);
+      image(mariah, 0, 0, width, height);
       text("playing wolf howl", 100, 150);
       break;
 
@@ -176,7 +176,7 @@ function draw() {
 
     case 4:
       // pretty stuff to hang out here.
-      image(bluegrass, 0, 0);
+      image(bluegrass, 0, 0, width, height);
       text("playing song 2", 100, 150);
       break;
 
@@ -189,7 +189,7 @@ function draw() {
 
     case 6:
       // pretty stuff to hang out here.
-      image(hindi, 0, 0);
+      image(hindi, 0, 0, width, height);
       text("playing man sigh", 100, 150);
       break;
 
@@ -201,7 +201,7 @@ function draw() {
 
     case 8:
       // pretty stuff to hang out here.
-      image(california, 0, 0);
+      image(california, 0, 0, width, height);
       text("playing song 4", 100, 150);
       break;
 
