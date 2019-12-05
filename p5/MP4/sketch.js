@@ -105,43 +105,43 @@ function draw() {
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
 
   if ((alpha > 0) && (alpha < 45) && (myState != 2)) { // degrees for 1st song; you can change these!
-pauseTheMusic() ;
+
     myState = 1;
   }
 
   if ((alpha > 46) && (alpha < 90) && (myState != 4)) { // degrees for 2nd song
-pauseTheMusic() ;
+
     myState = 3; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 91) && (alpha < 135) && (myState != 6)) { // degrees for 2nd song
-pauseTheMusic() ;
+
     myState = 5; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 136) && (alpha < 180) && (myState != 8)) { // degrees for 2nd song
 
-  pauseTheMusic() ;
+
     myState = 7; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 181) && (alpha < 225) && (myState != 10)) { // degrees for 2nd song
-pauseTheMusic() ;
+
     myState = 9; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 226) && (alpha < 270) && (myState != 12)) { // degrees for 2nd song
-pauseTheMusic() ;
+
     myState = 11; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 271) && (alpha < 315) && (myState != 14)) { // degrees for 2nd song
-pauseTheMusic() ;
+
     myState = 13; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 316) && (alpha < 360) && (myState != 16)) { // degrees for 2nd song
-pauseTheMusic() ;
+
     myState = 15; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
