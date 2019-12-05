@@ -6,47 +6,32 @@ var caligirls, tunak, miku, anthem, jb, christmas, chum, lucky;
 // var sigh;
 
 function preload() {
-  mariah = loadImage('Assets/AIWFCIY.jpg');
-  canada = loadImage('Assets/Can.jpg');
-  russian = loadImage('Assets/CDB.jpg');
-  california = loadImage('Assets/CG.jpg');
-  despacito = loadImage('Assets/D.jpg');
-  bluegrass = loadImage('Assets/TLO.jpg');
-  hindi = loadImage('Assets/TTT.jpg');
-  voca = loadImage('Assets/IP.jpg');
+
   // up = loadImage('assets/OTR.jpg');
   // down = loadImage('assets/KAP.jpg');
 
   // wolf = loadSound('Assets/wolfhowl.mp3');
   // sigh = loadSound('Assets/sigh.mp3');
 
+  caligirls = loadSound('Assets/cal.mp3');
+   tunak = loadSound('Assets/tunak_mixdown.mp3');
+  miku = loadSound('Assets/ievanpolkka_mixdown.mp3');
+  anthem = loadSound('Assets/canada_mixdown.mp3');
+  jb = loadSound('Assets/despacito_mixdown.mp3');
+  christmas = loadSound('Assets/Christmas_mixdown.mp3');
+  chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
+  lucky = loadSound('Assets/luckyone.mp3');
 
-}
 //
 // function setup() {
 //   createCanvas(windowWidth, windowHeight, WEBGL);
 //   comicsans = loadFont('assets/NotoSansJP-Bold.otf');
 //
+}
 
-//   tunak.loop();
-//   tunak.stop();
-//   miku.loop();
-//   miku.stop();
-//   anthem.loop();
-//   anthem.stop();
-// christmas.loop();
-// christmas.stop();
-//   chum.loop();
-//   chum.stop();
-//   lucky.loop();
-//   lucky.stop();
-//   caligirls.loop();
-//   caligirls.stop();
-// //
-
+//
 function pauseTheMusic() {
   jb.pause() ;
-  caligirls.pause() ;
   // wolf.pause();
   // sigh.pause();
   caligirls.pause();
@@ -70,31 +55,34 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
-  // caligirls = loadSound('Assets/cal.mp3');
-  //  tunak = loadSound('Assets/tunak_mixdown.mp3');
-  // miku = loadSound('Assets/ievanpolkka_mixdown.mp3');
-  // anthem = loadSound('Assets/canada_mixdown.mp3');
-  // jb = loadSound('Assets/despacito_mixdown.mp3');
-  // christmas = loadSound('Assets/Christmas_mixdown.mp3');
-  // chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
-  // lucky = loadSound('Assets/luckyone.mp3');
+  mariah = loadImage('Assets/AIWFCIY.jpg');
+  canada = loadImage('Assets/Can.jpg');
+  russian = loadImage('Assets/CDB.jpg');
+  california = loadImage('Assets/CG.jpg');
+  despacito = loadImage('Assets/D.jpg');
+  bluegrass = loadImage('Assets/TLO.jpg');
+  hindi = loadImage('Assets/TTT.jpg');
+  voca = loadImage('Assets/IP.jpg');
 
-  // knives.loop();
-  // knives.stop();
-  // caligirls.loop();
-  // caligirls.stop();
-  // jb.loop();
-  // jb.stop();
+  tunak.loop();
+  tunak.pause();
+  miku.loop();
+  miku.pause();
+  anthem.loop();
+  anthem.pause();
+  christmas.loop();
+  christmas.pause();
+  chum.loop();
+  chum.pause();
+  lucky.loop();
+  lucky.pause();
+  caligirls.loop();
+  caligirls.pause();
 
-  // wolf.loop();
-  // wolf.pause();
-  // sigh.loop();
-  // sigh.pause();
-  // knives.loop();
-  // knives.pause();
-  // caligirls.loop();
-  // caligirls.pause();
-  // requestT() ;
+  jb.loop();
+  jb.stop();
+
+
 
   // initialize accelerometer variables
   alpha = 0;
@@ -108,7 +96,7 @@ function setup() {
 
 function draw() {
 
-  background('red');
+  background('blue');
 
   // alpha is the direction! It starts at 0 when you load the page. If you turn to the left, it goes up,
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
@@ -166,14 +154,14 @@ function draw() {
       //north
       // christmas.play() ;
       pauseTheMusic();
-      // christmas.play();
+      christmas.play();
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
     case 2:
       // put some pretty images here or something, for song1
       image(mariah, 0, 0, windowWidth, windowHeight);
-      text("playing All I Want For Christmas Is You", 100, 150);
+      text("All I Want For Christmas Is You", 100, 150);
       break;
 
       // states for song 2
@@ -181,42 +169,42 @@ function draw() {
       //northwest
       // song2.play() ;
       pauseTheMusic();
-      // anthem.play();
+      anthem.play();
       myState = 4; // go directly to the next state so we don't keep needle-dropping!
       break;
 
     case 4:
       // pretty stuff to hang out here.
-      // image(canada, 0, 0, windowWidth, windowHeight);
-      text("playing (French) Canadian Anthem", 100, 150);
+      image(canada, 0, 0, windowWidth, windowHeight);
+      text("(French) Canadian Anthem", 100, 150);
       break;
 
       // states for song 2
     case 5:
       // song3.play() ;
       pauseTheMusic();
-      // california.play();
+      caligirls.play();
       myState = 6;
       break;
 
     case 6:
       // pretty stuff to hang out here.
-      // image(caligirls, 0, 0, windowWidth, windowHeight);
-      text("playing California Girls", 100, 150);
+      image(california, 0, 0, windowWidth, windowHeight);
+      text("California Girls", 100, 150);
       break;
 
       // states for song 2
     case 7:
       // song4.play() ;
       pauseTheMusic();
-      // jb.play();
+      jb.play();
       myState = 8;
       break;
 
     case 8:
       // pretty stuff to hang out here.
       image(despacito, 0, 0, windowWidth, windowHeight);
-      text("playing Despacito", 100, 150);
+      text("Despacito", 100, 150);
       break;
 
       // states for song 2
@@ -224,55 +212,55 @@ function draw() {
       // song5.play() ;
       // jb.play() ;
       pauseTheMusic();
-      // lucky.play();
+      lucky.play();
       myState = 10;
       break;
 
     case 10:
       // pretty stuff to hang out here.
       image(bluegrass, 0, 0, windowWidth, windowHeight);
-      text("playing Lucky One", 100, 150);
+      text("Lucky One", 100, 150);
       break;
 
       // states for song 2
     case 11:
       // song2.play() ;
       pauseTheMusic();
-      // miku.play();
+      miku.play();
       myState = 12;
       break;
 
     case 12:
       // pretty stuff to hang out here.
       image(voca, 0, 0, windowWidth, windowHeight);
-      text("playing Ievan Polkka", 100, 150);
+      text("Ievan Polkka", 100, 150);
       break;
 
       // states for song 2
     case 13:
       // song2.play() ;
       pauseTheMusic();
-      // tunak.play();
+      tunak.play();
       myState = 14;
       break;
 
     case 14:
       // pretty stuff to hang out here.
       image(hindi, 0, 0, windowWidth, windowHeight);
-      text("playing song Tunak Tunak Tun", 100, 150);
+      text("Tunak Tunak Tun", 100, 150);
       break;
 
     case 15:
       //songwhatever.play();
       pauseTheMusic();
-      // chum.play();
+      chum.play();
       myState = 16;
       break;
 
     case 16:
       //pretty STUFF
       image(russian, 0, 0, windowWidth, windowHeight);
-      text("playing Chum Drum Bedrum", 100, 150);
+      text("Chum Drum Bedrum", 100, 150);
       break;
   }
 
@@ -281,22 +269,23 @@ function draw() {
   // DECORATIONS
   // Just a bunch of text commands to display data coming in from addEventListeners
   textAlign(LEFT);
-  textSize(20);
+  textSize(40);
   fill('black');
-  text("orientation data:", 25, 25);
+  text("Cursed Musical Carousel", 25, 25);
   textSize(15);
-  text("alpha: " + alpha.toFixed(0), 25, 50);
-  text("beta: " + beta.toFixed(0), 25, 70);
-  text("gamma: " + gamma.toFixed(0), 25, 90);
-  textSize(20);
-  text("acceleration data:", 25, 125);
+  text("To change the song " , 25, 50);
+  text("Move your phone 360 Degrees ", 25, 70);
+  text("Enjoy! ", 25, 90);
+  textSize(40);
+  text("Song Playing: ", 25, 125);
   textSize(15);
 
+// alpha.toFixed(0) to show data
 
-  text("x = " + x.toFixed(0), 25, 150); // .toFixed means just show (x) decimal places
-  text("y = " + y.toFixed(0), 25, 170);
-  text("z = " + z.toFixed(0), 25, 190);
-  text("myState = " + myState, 25, 210);
+  // text("x = " + x.toFixed(0), 25, 150); // .toFixed means just show (x) decimal places
+  // text("y = " + y.toFixed(0), 25, 170);
+  // text("z = " + z.toFixed(0), 25, 190);
+  // text("myState = " + myState, 25, 210);
 
 }
 
