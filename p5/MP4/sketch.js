@@ -21,8 +21,8 @@ function preload() {
 //  tunak = loadSound('Assets/daler-mehndi-tunak-tunak-tun-video-youtubemp3free.org.mp3');
   // miku = loadSound('Assets/hatsune-miku-ievan-polkka-project-diva-theatre-hd-youtubemp3free.org.mp3');
   // anthem = loadSound('Assets/hymne-natonal-du-canada-en-franais-youtubemp3free.org.mp3');
-   jb = loudSound('Assets/JBD.mp3');
-  // bop = loudSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
+   jb = loadSound('Assets/JBD.mp3');
+  // bop = loadSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
   // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
   //
