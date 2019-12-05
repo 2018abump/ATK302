@@ -79,10 +79,10 @@ function setup() {
   chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
   lucky = loadSound('Assets/luckyone.mp3');
 
-  knives.loop();
-  knives.stop();
-  caligirls.loop();
-  caligirls.stop();
+  // knives.loop();
+  // knives.stop();
+  // caligirls.loop();
+  // caligirls.stop();
   jb.loop();
   jb.stop();
 
@@ -90,10 +90,10 @@ function setup() {
   // wolf.pause();
   // sigh.loop();
   // sigh.pause();
-  knives.loop();
-  knives.pause();
-  caligirls.loop();
-  caligirls.pause();
+  // knives.loop();
+  // knives.pause();
+  // caligirls.loop();
+  // caligirls.pause();
   // requestT() ;
 
   // initialize accelerometer variables
@@ -179,15 +179,15 @@ function draw() {
       // states for song 2
     case 3: // this is for the 2nd song.
       //northwest
-      // song2.play() ;
+      song2.play() ;
       pauseTheMusic();
-      anthem.play();
+      // anthem.play();
       myState = 4; // go directly to the next state so we don't keep needle-dropping!
       break;
 
     case 4:
       // pretty stuff to hang out here.
-      image(canada, 0, 0, windowWidth, windowHeight);
+      // image(canada, 0, 0, windowWidth, windowHeight);
       text("playing (French) Canadian Anthem", 100, 150);
       break;
 
@@ -201,7 +201,7 @@ function draw() {
 
     case 6:
       // pretty stuff to hang out here.
-      image(caligirls, 0, 0, windowWidth, windowHeight);
+      // image(caligirls, 0, 0, windowWidth, windowHeight);
       text("playing California Girls", 100, 150);
       break;
 
