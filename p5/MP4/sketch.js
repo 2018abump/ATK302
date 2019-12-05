@@ -9,15 +9,15 @@ var sigh;
 
 function preload() {
   mariah = loadImage('Assets/AIWFCIY.jpg');
-  // canada = loadImage('Assets/Can.jpg');
-  // russian = loadImage('Assets/CDB.jpg');
+  canada = loadImage('Assets/Can.jpg');
+  russian = loadImage('Assets/CDB.jpg');
   california = loadImage('Assets/CG.jpg');
-  // despacito = loadImage('Assets/D.jpg');
-  // vocaloid = loadImage('Assets/IP.jpg');
+  despacito = loadImage('Assets/D.jpg');
+  vocaloid = loadImage('Assets/IP.jpg');
   bluegrass = loadImage('Assets/TLO.jpg');
   hindi = loadImage('Assets/TTT.jpg');
-  // up = loadImage('assets/OTR.jpg');
-  // down = loadImage('assets/KAP.jpg');
+  up = loadImage('assets/OTR.jpg');
+  down = loadImage('assets/KAP.jpg');
 
   // knives = loadSound('Assets/knives.mp3');
   // caligirls = loadSound('Assets/cal.mp3');
@@ -176,7 +176,7 @@ function draw() {
 
     case 4:
       // pretty stuff to hang out here.
-      image(bluegrass, 0, 0, windowWidth, windowHeight);
+      image(canada, 0, 0, windowWidth, windowHeight);
       text("playing song 2", 100, 150);
       break;
 
@@ -189,7 +189,7 @@ function draw() {
 
     case 6:
       // pretty stuff to hang out here.
-      image(hindi, 0, 0, windowWidth, windowHeight);
+      image(california, 0, 0, windowWidth, windowHeight);
       text("playing man sigh", 100, 150);
       break;
 
@@ -201,7 +201,7 @@ function draw() {
 
     case 8:
       // pretty stuff to hang out here.
-      image(california, 0, 0, windowWidth, windowHeight);
+      image(despacito, 0, 0, windowWidth, windowHeight);
       text("playing song 4", 100, 150);
       break;
 
@@ -214,6 +214,7 @@ function draw() {
 
     case 10:
       // pretty stuff to hang out here.
+      image(bluegrass, 0, 0, windowWidth, windowHeight);
       text("playing song 5", 100, 150);
       break;
 
@@ -225,6 +226,7 @@ function draw() {
 
     case 12:
       // pretty stuff to hang out here.
+      image(vocaloid, 0, 0, windowWidth, windowHeight);
       text("playing song 6", 100, 150);
       break;
 
@@ -236,6 +238,7 @@ function draw() {
 
     case 14:
       // pretty stuff to hang out here.
+      image(hindi, 0, 0, windowWidth, windowHeight);
       text("playing song 7", 100, 150);
       break;
 
@@ -246,6 +249,7 @@ function draw() {
 
     case 16:
     //pretty STUFF
+    image(russian, 0, 0, windowWidth, windowHeight);
     text("playing song 8", 100, 150);
     break;
   }
