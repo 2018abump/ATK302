@@ -20,14 +20,6 @@ function preload() {
   // wolf = loadSound('Assets/wolfhowl.mp3');
   // sigh = loadSound('Assets/sigh.mp3');
 
-  caligirls = loadSound('Assets/cal.mp3');
-   tunak = loadSound('Assets/tunak_mixdown.mp3');
-  miku = loadSound('Assets/ievanpolkka_mixdown.mp3');
-  anthem = loadSound('Assets/canada_mixdown.mp3');
-  jb = loadSound('Assets/despacito_mixdown.mp3');
-  christmas = loadSound('Assets/Christmas_mixdown.mp3');
-  chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
-  lucky = loadSound('Assets/luckyone.mp3');
 
 }
 //
@@ -77,6 +69,15 @@ var myState = 0;
 function setup() {
 
   createCanvas(windowWidth, windowHeight);
+
+  caligirls = loadSound('Assets/cal.mp3');
+   tunak = loadSound('Assets/tunak_mixdown.mp3');
+  miku = loadSound('Assets/ievanpolkka_mixdown.mp3');
+  anthem = loadSound('Assets/canada_mixdown.mp3');
+  jb = loadSound('Assets/despacito_mixdown.mp3');
+  christmas = loadSound('Assets/Christmas_mixdown.mp3');
+  chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
+  lucky = loadSound('Assets/luckyone.mp3');
 
   knives.loop();
   knives.stop();
