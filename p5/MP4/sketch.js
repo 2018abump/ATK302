@@ -92,8 +92,8 @@ function setup() {
   beta = 0;
   gamma = 0;
 
-  imageMode(CENTER);
-  rectMode(CENTER);
+  // imageMode(CENTER);
+  // rectMode(CENTER);
 
 }
 
