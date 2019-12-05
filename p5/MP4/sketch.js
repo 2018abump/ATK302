@@ -4,6 +4,8 @@ var knives ;
 var caligirls ;
 var jb ;
 
+var wolf;
+
 function preload() {
   mariah = loadImage('Assets/AIWFCIY.jpg');
   // canada = loadImage('Assets/Can.jpg');
@@ -22,6 +24,8 @@ function preload() {
   // miku = loadSound('Assets/hatsune-miku-ievan-polkka-project-diva-theatre-hd-youtubemp3free.org.mp3');
   // anthem = loadSound('Assets/hymne-natonal-du-canada-en-franais-youtubemp3free.org.mp3');
    jb = loadSound('Assets/JBD.mp3');
+
+   wolf = loadSound('Assets/wolfhowl.mp3');
   // bop = loadSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
   // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
@@ -71,6 +75,9 @@ function setup() {
   caligirls.stop();
   jb.loop();
   jb.stop();
+
+  wolf.loop();
+  wolf.stop();
   // requestT() ;
 
   // initialize accelerometer variables
@@ -142,7 +149,7 @@ pauseTheMusic() ;
     case 1: // this is for the first song.
     //north
       // christmas.play() ;
-      knives.play() ;
+      wolf.play() ;
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
