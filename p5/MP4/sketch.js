@@ -9,7 +9,7 @@ var sigh;
 
 function preload() {
 
-  vocaloid = loadImage('Assets/IP.jpg');
+  // vocaloid = loadImage('Assets/IP.jpg');
   bluegrass = loadImage('Assets/TLO.jpg');
   hindi = loadImage('Assets/TTT.jpg');
   // up = loadImage('assets/OTR.jpg');
@@ -71,10 +71,10 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   mariah = loadImage('Assets/AIWFCIY.jpg');
-  canada = loadImage('Assets/Can.jpg');
-  russian = loadImage('Assets/CDB.jpg');
+  // canada = loadImage('Assets/Can.jpg');
+  // russian = loadImage('Assets/CDB.jpg');
   california = loadImage('Assets/CG.jpg');
-  despacito = loadImage('Assets/D.jpg');
+  // despacito = loadImage('Assets/D.jpg');
 
   // knives.loop();
   // knives.stop();
@@ -178,7 +178,7 @@ function draw() {
 
     case 4:
       // pretty stuff to hang out here.
-      image(canada, 0, 0, windowWidth, windowHeight);
+      // image(canada, 0, 0, windowWidth, windowHeight);
       text("playing song 2", 100, 150);
       break;
 
@@ -191,6 +191,7 @@ function draw() {
 
     case 6:
       // pretty stuff to hang out here.
+      //east
       image(california, 0, 0, windowWidth, windowHeight);
       text("playing man sigh", 100, 150);
       break;
@@ -203,7 +204,7 @@ function draw() {
 
     case 8:
       // pretty stuff to hang out here.
-      image(despacito, 0, 0, windowWidth, windowHeight);
+      // image(despacito, 0, 0, windowWidth, windowHeight);
       text("playing song 4", 100, 150);
       break;
 
@@ -216,6 +217,7 @@ function draw() {
 
     case 10:
       // pretty stuff to hang out here.
+      //south
       image(bluegrass, 0, 0, windowWidth, windowHeight);
       text("playing song 5", 100, 150);
       break;
@@ -228,7 +230,7 @@ function draw() {
 
     case 12:
       // pretty stuff to hang out here.
-      image(vocaloid, 0, 0, windowWidth, windowHeight);
+      // image(vocaloid, 0, 0, windowWidth, windowHeight);
       text("playing song 6", 100, 150);
       break;
 
@@ -251,7 +253,7 @@ function draw() {
 
     case 16:
     //pretty STUFF
-    image(russian, 0, 0, windowWidth, windowHeight);
+    // image(russian, 0, 0, windowWidth, windowHeight);
     text("playing song 8", 100, 150);
     break;
   }
