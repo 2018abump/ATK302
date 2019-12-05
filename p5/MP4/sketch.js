@@ -28,21 +28,21 @@ function preload() {
 //   comicsans = loadFont('assets/NotoSansJP-Bold.otf');
 //
 
-  tunak.loop();
-  tunak.stop();
-  miku.loop();
-  miku.stop();
-  anthem.loop();
-  anthem.stop();
-christmas.loop();
-christmas.stop();
-  chum.loop();
-  chum.stop();
-  lucky.loop();
-  lucky.stop();
-  caligirls.loop();
-  caligirls.stop();
-//
+//   tunak.loop();
+//   tunak.stop();
+//   miku.loop();
+//   miku.stop();
+//   anthem.loop();
+//   anthem.stop();
+// christmas.loop();
+// christmas.stop();
+//   chum.loop();
+//   chum.stop();
+//   lucky.loop();
+//   lucky.stop();
+//   caligirls.loop();
+//   caligirls.stop();
+// //
 
 function pauseTheMusic() {
   jb.pause() ;
@@ -70,21 +70,21 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
-  caligirls = loadSound('Assets/cal.mp3');
-   tunak = loadSound('Assets/tunak_mixdown.mp3');
-  miku = loadSound('Assets/ievanpolkka_mixdown.mp3');
-  anthem = loadSound('Assets/canada_mixdown.mp3');
-  jb = loadSound('Assets/despacito_mixdown.mp3');
-  christmas = loadSound('Assets/Christmas_mixdown.mp3');
-  chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
-  lucky = loadSound('Assets/luckyone.mp3');
+  // caligirls = loadSound('Assets/cal.mp3');
+  //  tunak = loadSound('Assets/tunak_mixdown.mp3');
+  // miku = loadSound('Assets/ievanpolkka_mixdown.mp3');
+  // anthem = loadSound('Assets/canada_mixdown.mp3');
+  // jb = loadSound('Assets/despacito_mixdown.mp3');
+  // christmas = loadSound('Assets/Christmas_mixdown.mp3');
+  // chum = loadSound('Assets/chumchumbedrum_mixdown.mp3');
+  // lucky = loadSound('Assets/luckyone.mp3');
 
   // knives.loop();
   // knives.stop();
   // caligirls.loop();
   // caligirls.stop();
-  jb.loop();
-  jb.stop();
+  // jb.loop();
+  // jb.stop();
 
   // wolf.loop();
   // wolf.pause();
@@ -166,7 +166,7 @@ function draw() {
       //north
       // christmas.play() ;
       pauseTheMusic();
-      christmas.play();
+      // christmas.play();
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
@@ -179,7 +179,7 @@ function draw() {
       // states for song 2
     case 3: // this is for the 2nd song.
       //northwest
-      song2.play() ;
+      // song2.play() ;
       pauseTheMusic();
       // anthem.play();
       myState = 4; // go directly to the next state so we don't keep needle-dropping!
@@ -195,7 +195,7 @@ function draw() {
     case 5:
       // song3.play() ;
       pauseTheMusic();
-      california.play();
+      // california.play();
       myState = 6;
       break;
 
@@ -209,7 +209,7 @@ function draw() {
     case 7:
       // song4.play() ;
       pauseTheMusic();
-      jb.play();
+      // jb.play();
       myState = 8;
       break;
 
@@ -224,7 +224,7 @@ function draw() {
       // song5.play() ;
       // jb.play() ;
       pauseTheMusic();
-      lucky.play();
+      // lucky.play();
       myState = 10;
       break;
 
@@ -238,7 +238,7 @@ function draw() {
     case 11:
       // song2.play() ;
       pauseTheMusic();
-      miku.play();
+      // miku.play();
       myState = 12;
       break;
 
@@ -252,7 +252,7 @@ function draw() {
     case 13:
       // song2.play() ;
       pauseTheMusic();
-      tunak.play();
+      // tunak.play();
       myState = 14;
       break;
 
@@ -265,7 +265,7 @@ function draw() {
     case 15:
       //songwhatever.play();
       pauseTheMusic();
-      chum.play();
+      // chum.play();
       myState = 16;
       break;
 
