@@ -5,6 +5,7 @@ var caligirls ;
 var jb ;
 
 var wolf;
+var sigh;
 
 function preload() {
   mariah = loadImage('Assets/AIWFCIY.jpg');
@@ -18,14 +19,15 @@ function preload() {
   // up = loadImage('assets/OTR.jpg');
   // down = loadImage('assets/KAP.jpg');
 
-  knives = loadSound('Assets/knives.mp3');
-  caligirls = loadSound('Assets/cal.mp3');
+  // knives = loadSound('Assets/knives.mp3');
+  // caligirls = loadSound('Assets/cal.mp3');
 //  tunak = loadSound('Assets/daler-mehndi-tunak-tunak-tun-video-youtubemp3free.org.mp3');
   // miku = loadSound('Assets/hatsune-miku-ievan-polkka-project-diva-theatre-hd-youtubemp3free.org.mp3');
   // anthem = loadSound('Assets/hymne-natonal-du-canada-en-franais-youtubemp3free.org.mp3');
-   jb = loadSound('Assets/JBD.mp3');
+   // jb = loadSound('Assets/JBD.mp3');
 
    wolf = loadSound('Assets/wolfhowl.mp3');
+   sigh = loadSound('Assets/sigh.mp3');
   // bop = loadSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
   // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
@@ -53,9 +55,12 @@ function preload() {
 //
 
 function pauseTheMusic() {
-  jb.pause() ;
-  knives.pause() ;
-  caligirls.pause() ;
+  // jb.pause() ;
+  // knives.pause() ;
+  // caligirls.pause() ;
+  wolf.pause();
+  sigh.pause();
+
 }
 
 var alpha, beta, gamma; // orientation data
@@ -78,6 +83,8 @@ function setup() {
 
   wolf.loop();
   wolf.stop();
+  sigh.loop();
+  sigh.stop();
   // requestT() ;
 
   // initialize accelerometer variables
@@ -156,7 +163,7 @@ pauseTheMusic() ;
     case 2:
       // put some pretty images here or something, for song1
       image(mariah, 0, 0);
-      text("playing song 1", 100, 150);
+      text("playing wolf howl", 100, 150);
       break;
 
       // states for song 2
@@ -176,14 +183,14 @@ pauseTheMusic() ;
       // states for song 2
     case 5:
       // song2.play() ;
-      caligirls.play() ;
+      sigh.play() ;
       myState = 6;
       break;
 
     case 6:
       // pretty stuff to hang out here.
       image(hindi, 0, 0);
-      text("playing song 3", 100, 150);
+      text("playing man sigh", 100, 150);
       break;
 
       // states for song 2
