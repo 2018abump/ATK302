@@ -8,16 +8,12 @@ var wolf;
 var sigh;
 
 function preload() {
-  mariah = loadImage('Assets/AIWFCIY.jpg');
-  canada = loadImage('Assets/Can.jpg');
-  russian = loadImage('Assets/CDB.jpg');
-  california = loadImage('Assets/CG.jpg');
-  despacito = loadImage('Assets/D.jpg');
+
   vocaloid = loadImage('Assets/IP.jpg');
   bluegrass = loadImage('Assets/TLO.jpg');
   hindi = loadImage('Assets/TTT.jpg');
-  up = loadImage('assets/OTR.jpg');
-  down = loadImage('assets/KAP.jpg');
+  // up = loadImage('assets/OTR.jpg');
+  // down = loadImage('assets/KAP.jpg');
 
   // knives = loadSound('Assets/knives.mp3');
   // caligirls = loadSound('Assets/cal.mp3');
@@ -26,8 +22,8 @@ function preload() {
   // anthem = loadSound('Assets/hymne-natonal-du-canada-en-franais-youtubemp3free.org.mp3');
    // jb = loadSound('Assets/JBD.mp3');
 
-   wolf = loadSound('Assets/wolfhowl.mp3');
-   sigh = loadSound('Assets/sigh.mp3');
+   // wolf = loadSound('Assets/wolfhowl.mp3');
+   // sigh = loadSound('Assets/sigh.mp3');
   // bop = loadSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
   // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
@@ -58,8 +54,8 @@ function pauseTheMusic() {
   // jb.pause() ;
   // knives.pause() ;
   // caligirls.pause() ;
-  wolf.pause();
-  sigh.pause();
+  // wolf.pause();
+  // sigh.pause();
 
 }
 
@@ -74,6 +70,12 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
+  mariah = loadImage('Assets/AIWFCIY.jpg');
+  canada = loadImage('Assets/Can.jpg');
+  russian = loadImage('Assets/CDB.jpg');
+  california = loadImage('Assets/CG.jpg');
+  despacito = loadImage('Assets/D.jpg');
+
   // knives.loop();
   // knives.stop();
   // caligirls.loop();
@@ -81,10 +83,10 @@ function setup() {
   // jb.loop();
   // jb.stop();
 
-  wolf.loop();
-  wolf.stop();
-  sigh.loop();
-  sigh.stop();
+  // wolf.loop();
+  // wolf.stop();
+  // sigh.loop();
+  // sigh.stop();
   // requestT() ;
 
   // initialize accelerometer variables
@@ -156,7 +158,7 @@ function draw() {
     case 1: // this is for the first song.
     //north
       // christmas.play() ;
-      wolf.play() ;
+      // wolf.play() ;
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
@@ -183,7 +185,7 @@ function draw() {
       // states for song 2
     case 5:
       // song2.play() ;
-      sigh.play() ;
+      // sigh.play() ;
       myState = 6;
       break;
 
