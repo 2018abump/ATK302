@@ -189,7 +189,7 @@ function draw() {
 
     case 6:
       // pretty stuff to hang out here.
-      image(hindi, 0, 0, windowWidth, wndowHeight);
+      image(hindi, 0, 0, windowWidth, windowHeight);
       text("playing man sigh", 100, 150);
       break;
 
