@@ -1,5 +1,8 @@
 // var direction = 0;
 var mariah;
+var knives ;
+var caligirls ;
+var jb ;
 
 function preload() {
   mariah = loadImage('Assets/AIWFCIY.jpg');
@@ -13,12 +16,12 @@ function preload() {
   // up = loadImage('assets/OTR.jpg');
   // down = loadImage('assets/KAP.jpg');
 
-  // knives = loadSound('Assets/black-veil-bridesknives-and-pens-lyrics-youtubemp3free.org.mp3');
-  // caligirls = loadSound('Assets/california-girls-by-katy-perry-ft-snoop-dog-lyrics-youtubemp3free.org.mp3');
-  // tunak = loadSound('Assets/daler-mehndi-tunak-tunak-tun-video-youtubemp3free.org.mp3');
+  knives = loadSound('Assets/black-veil-bridesknives-and-pens-lyrics-youtubemp3free.org.mp3');
+  caligirls = loadSound('Assets/california-girls-by-katy-perry-ft-snoop-dog-lyrics-youtubemp3free.org.mp3');
+//  tunak = loadSound('Assets/daler-mehndi-tunak-tunak-tun-video-youtubemp3free.org.mp3');
   // miku = loadSound('Assets/hatsune-miku-ievan-polkka-project-diva-theatre-hd-youtubemp3free.org.mp3');
   // anthem = loadSound('Assets/hymne-natonal-du-canada-en-franais-youtubemp3free.org.mp3');
-  // jb = loudSound('Assets/JustinBieber-Despacito(Lyrics)ftLuisFonsiDaddyYankee[Pop].mp3');
+   jb = loudSound('Assets/JustinBieber-Despacito(Lyrics)ftLuisFonsiDaddyYankee[Pop].mp3');
   // bop = loudSound('Assets/kidz-bop-kids-old-town-road-youtubemp3free.org.mp3');
   // christmas = loadSound('Assets/mariah-carey-all-i-want-for-christmas-is-you-lyrics-youtubemp3free.org.mp3');
   // chum = loadSound('Assets/Weirdrussiansinger-ChumDrumBedrum.mp3');
@@ -29,18 +32,18 @@ function preload() {
 //   createCanvas(windowWidth, windowHeight, WEBGL);
 //   comicsans = loadFont('assets/NotoSansJP-Bold.otf');
 //
-//   knives.loop();
-//   knives.stop();
-//   caligirls.loop();
-//   caligirls.stop();
+  knives.loop();
+  knives.stop();
+  caligirls.loop();
+  caligirls.stop();
 //   tunak.loop();
 //   tunak.stop();
 //   miku.loop();
 //   miku.stop();
 //   anthem.loop();
 //   anthem.stop();
-//   jb.loop();
-//   jb.stop();
+  jb.loop();
+  jb.stop();
 //   bop.loop();
 //   bop.stop();
   // christmas.loop();
@@ -142,7 +145,11 @@ function preload() {
 //   console.log("Magnetic field along the Z-axis " + magSensor.z);
 // });
 // magSensor.start();
-
+function pauseTheMusic() {
+  jb.pause() ;
+  knives.pause() ;
+  caligirls.pause() ; 
+}
 
 var alpha, beta, gamma; // orientation data
 var x = 0; // acceleration data
@@ -174,34 +181,43 @@ function draw() {
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
 
   if ((alpha > 0) && (alpha < 45) && (myState != 2)) { // degrees for 1st song; you can change these!
+pauseTheMusic() ;
     myState = 1;
   }
 
   if ((alpha > 46) && (alpha < 90) && (myState != 4)) { // degrees for 2nd song
+pauseTheMusic() ;
     myState = 3; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 91) && (alpha < 135) && (myState != 6)) { // degrees for 2nd song
+pauseTheMusic() ;
     myState = 5; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 136) && (alpha < 180) && (myState != 8)) { // degrees for 2nd song
+
+  pauseTheMusic() ;
     myState = 7; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 181) && (alpha < 225) && (myState != 10)) { // degrees for 2nd song
+pauseTheMusic() ;
     myState = 9; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 226) && (alpha < 270) && (myState != 12)) { // degrees for 2nd song
+pauseTheMusic() ;
     myState = 11; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 271) && (alpha < 315) && (myState != 14)) { // degrees for 2nd song
+pauseTheMusic() ;
     myState = 13; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
   if ((alpha > 316) && (alpha < 360) && (myState != 16)) { // degrees for 2nd song
+pauseTheMusic() ;
     myState = 15; // we have to skip a state because each state needs to go to a "hangout" state
   }
 
@@ -216,6 +232,7 @@ function draw() {
     case 1: // this is for the first song.
     //north
       // christmas.play() ;
+      knives.play() ;
       myState = 2; // Don't hang out here in the "needle-drop" state!!!
       break;
 
@@ -227,8 +244,9 @@ function draw() {
 
       // states for song 2
     case 3: // this is for the 2nd song.
-      //south
+      //northwest
       // song2.play() ;
+
       myState = 4; // go directly to the next state so we don't keep needle-dropping!
       break;
 
@@ -241,6 +259,7 @@ function draw() {
       // states for song 2
     case 5:
       // song2.play() ;
+      caligirls.play() ;
       myState = 6;
       break;
 
@@ -265,6 +284,7 @@ function draw() {
       // states for song 2
     case 9:
       // song2.play() ;
+      jb.play() ;
       myState = 10;
       break;
 
