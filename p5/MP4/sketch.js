@@ -294,6 +294,16 @@ function draw() {
       // pretty stuff to hang out here.
       text("playing song 7", 100, 150);
       break;
+
+    case 15:
+      //songwhatever.play();
+      myState = 16;
+      break;
+
+    case 16:
+    //pretty STUFF
+    text("playing song 8", 100, 150);
+    break;
   }
 
 
