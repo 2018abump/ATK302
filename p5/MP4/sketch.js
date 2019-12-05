@@ -74,12 +74,12 @@ function setup() {
 
   createCanvas(windowWidth, windowHeight);
 
-  knives.loop();
-  knives.stop();
-  caligirls.loop();
-  caligirls.stop();
-  jb.loop();
-  jb.stop();
+  // knives.loop();
+  // knives.stop();
+  // caligirls.loop();
+  // caligirls.stop();
+  // jb.loop();
+  // jb.stop();
 
   wolf.loop();
   wolf.stop();
