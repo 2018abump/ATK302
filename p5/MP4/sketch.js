@@ -99,7 +99,7 @@ function setup() {
 
 function draw() {
 
-  background('red'); // light blue
+  background('green'); // light blue
 
   // alpha is the direction! It starts at 0 when you load the page. If you turn to the left, it goes up,
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
