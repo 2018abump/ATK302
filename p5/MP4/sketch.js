@@ -99,7 +99,7 @@ function setup() {
 
 function draw() {
 
-  background('#c6f5ff'); // light blue
+  background('red'); // light blue
 
   // alpha is the direction! It starts at 0 when you load the page. If you turn to the left, it goes up,
   // all the way from 1 to 360. If you turn to the right, you'll start at 360 and go down.
@@ -208,7 +208,7 @@ function draw() {
       // states for song 2
     case 9:
       // song2.play() ;
-      jb.play() ;
+      // jb.play() ;
       myState = 10;
       break;
 
